@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-color: white;
+    /* text-align: center; */
+    /* background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%); */
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+h1 {
+    padding-left: 15px;
+}
+
+input {
+    padding: 10px;
+    width: 400px;
+    margin-right: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+#text {
+    border-radius: 0%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: transparent;
+    border-bottom: 0.1px double black;
+}
+
+hr {
+    width: 100%;
+    margin-top: 15px;
+    height: 4px;
+    background-color: black;
+    outline: none;
+    border: none;
+}
+
+span {
+    cursor: pointer;
+}
+
+#btn {
+    border: none;
+    width: 100px;
+    color: white;
+    font-size: 18px;
+    background-color: black;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#done {
+    width: 80px;
+    background-color: green;
+    color: snow;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-right: 10%;
+    /* margin-top: 6%; */
+    cursor: pointer;
+    text-align: center;
+}
+
+li {
+    position: relative;
+    font-size: 20px;
+    margin-top: 3%;
+}
+
+#remove {
+    width: 80px;
+    background-color: red;
+    color: snow;
+    font-size: 16px;
+    margin-right: 0;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+}
+
+#div {
+    position: relative;
+    padding-left: 15px;
+    /* right: 20%; */
+    right: 0%;
+    left: 0%;
+    text-decoration: none;
+    list-style: none;
+    margin: auto;
+    width: 100%;
+}
+
+#div #done {
+    /* left: 300px; */
+    position: absolute;
+    right: 0% !important;
+    /* right: 10% !important; */
+    /* right: 0%;
+    margin-right: 0%; */
+    border-radius: 15px;
+}
+
+#div #remove {
+    /* left: 400px; */
+    position: absolute;
+    right: 0% !important;
+    /* margin-right: 0%; */
+    border-radius: 15px;
+}
+
+.list {
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+
+@media screen and (max-width:375px) {
+    body {
+        /* width: 375px;
+        background: none; */
+        background-color: #8BC6EC;
+        background-image: none;
+    }
+    #text {
+        margin: 0;
+        width: auto;
+        margin-top: 15px;
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+    }
+    #btn {
+        margin-left: 5px;
+        width: 80px;
+        height: auto;
+        padding: 5px;
+    }
+    #div {
+        margin: 0;
+    }
+    #div #done {
+        width: 17%;
+        font-size: 15px;
+        margin-right: 20%;
+        margin-top: auto;
+    }
+    #div #remove {
+        width: 17%;
+        font-size: 15px;
+        /* margin-right: 10%; */
+        margin-right: 8px;
+        margin-top: auto;
+    }
+    li {
+        font-size: 15px;
+        color: black;
+        margin-top: 8%;
+    }
+}
